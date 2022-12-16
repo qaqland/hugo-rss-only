@@ -1,0 +1,19 @@
+baseurl: "/"
+disableKinds:
+  - taxonomy
+  # - page
+  # - home
+  - section
+  - taxonomy
+  - term
+  # - RSS
+  - sitemap
+  - robotsTXT
+  - "404"
+outputs:
+  home:
+    - HTML
+    - RSS
+  page:
+    # - HTML
+    - RSS
