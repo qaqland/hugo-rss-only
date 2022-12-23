@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Welcome to qaqLand!</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>{{ .Site.Title }}</title>
+    <link rel="icon" href="data:," />
     <style>
-        body {
-            width: min(35em, 85vw);
-            margin: 0 auto;
-            font-family: Tahoma, Verdana, Arial, sans-serif;
-        }
+      body {
+        width: min(35em, 85vw);
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <h1>Welcome to qaqLand!</h1>
-    <p>If you see this page, the web server is successfully installed and
-        working. Further configuration is required.</p>
-
-    <p>For online documentation and support please refer to
-        <a href="https://github.com/qaqland/">github.com/qaqland</a>.<br>
-        Further support is available at
-        <a href="mailto:qaq@qaq.land">mailto:qaq@qaq.land</a>.
+  <body>
+    <h1>{{ .Site.Title }}</h1>
+    <p>
+      If you see this page, the web server is successfully installed and
+      working. Further configuration is required.
     </p>
-
-    <p><em>Thank you for using <a href="./index.xml">rss</a>.</em></p>
-
-
-</body>
-
+    <p>
+      For online documentation and support please refer to
+      <a href="https://github.com/qaqland">github.com/qaqland</a>.<br />
+      Further support is available at
+      <a href="mailto:{{ .Site.Author.email }}"
+        >mailto:{{ .Site.Author.email }}</a
+      >.
+    </p>
+    <p>
+      <em>Thank you for using <a href="./index.xml">rss</a>.</em>
+    </p>
+  </body>
 </html>

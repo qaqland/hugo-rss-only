@@ -1,4 +1,10 @@
 baseurl: "/"
+title: "Welcome to qaqLand!"
+author:
+  name: qaqland
+  email: qaq@qaq.land
+
+# theme special, don't change
 disableKinds:
   - taxonomy
   # - page
